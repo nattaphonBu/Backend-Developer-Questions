@@ -1,6 +1,7 @@
 ## total_profit = (sell_price - cost_price) * inventory
 def calculete_total_profit(profit):
-    total_profit = (profit['sell_price'] - profit['cost_price']) * profit['inventory']
+    total_profit = (profit['sell_price'] - profit['cost_price']) \
+        * profit['inventory']
     ## used fuction round to rounding total_profit to integer
     print(round(total_profit))
 
