@@ -6,7 +6,7 @@
 # 2. check if the last 2 digit is same the last input 2 digits
 # 3. add the number to list
 
-def calculate_loterly_number(number):
+def calculate_lottery_number(number):
     if len(number) < 6 or len(number) > 6:
         return []
     string_number = ''
@@ -16,7 +16,9 @@ def calculate_loterly_number(number):
         string_number = '{:06}'.format(i)
         if string_number[4:] == last_secount_digit:
             data_list.append(string_number)
+    print('The winning number is {}'.format(number))
+    print('The output array should have: ')
     print(data_list)
 
 data = '120888'
-calculate_loterly_number(data)
+calculate_lottery_number(data)
