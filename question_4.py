@@ -28,10 +28,16 @@ def permutation(number_list):
             data_list.append(number)
     return data_list
 
-# number = '209324'
-number = '001000'
-number_list = permutation(number)
-number_list = dict.fromkeys(number_list) # Use dict.fromkeys() to get unique value
-print('The input number is {}'.format(number))
-print('The output array should have: ')
-print(list(number_list)) # Change from dict type to list type 
+def posible_of_pemutation(number):
+    if len(lottery_number) < 6 or len(lottery_number) > 6: # to check digit of lottery
+        return []
+    number_list = permutation(lottery_number)
+    number_list = dict.fromkeys(number_list) # Use dict.fromkeys() to get unique value
+    print('The input number is {}'.format(lottery_number))
+    print('The output array should have: ')
+    print(list(number_list)) # Change from dict type to list type
+ 
+lottery_number = '209324'
+posible_of_pemutation(lottery_number)
+lottery_number = '001000'
+posible_of_pemutation(lottery_number)
