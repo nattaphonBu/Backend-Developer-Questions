@@ -28,8 +28,10 @@ def permutation(number_list):
             data_list.append(number)
     return data_list
 
-number = '209324'
+# number = '209324'
+number = '001000'
 number_list = permutation(number)
+number_list = dict.fromkeys(number_list) # Use dict.fromkeys() to get unique value
 print('The input number is {}'.format(number))
 print('The output array should have: ')
-print(list(map(int, number_list)))
+print(list(number_list)) # Change from dict type to list type 
